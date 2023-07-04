@@ -4,7 +4,7 @@ variable "region" {
 }
 
 variable "ntier_vpc_info" {
-    type = list(object) ({
+    type = object ({
         vpc_cidr = string,
         subnet_names = list(string),
         subnet_azs= list(string)
